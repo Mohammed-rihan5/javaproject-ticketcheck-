@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Records</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #fff;
+            color: #185a9d;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ddd;
+        }
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 70%;
+            background: white;
+            color: black;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background: #185a9d;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>View All Records</h2>
+
+  <form action="CrudServlet" method="post">
+    <input type="hidden" name="action" value="read">
+    <input type="submit" value="Show Records" class="btn">
+</form>
+
+</body>
+</html>
